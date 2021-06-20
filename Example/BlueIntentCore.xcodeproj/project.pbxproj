@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		584DFCF58CB1D3510F299988 /* Pods_BlueIntentCore_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E891F16F77E08B0853EB3732 /* Pods_BlueIntentCore_Example.framework */; };
+		5B849CF9267F014600E364C1 /* BlueIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B849CF8267F014600E364C1 /* BlueIntent.swift */; };
+		5B849CFD267F015E00E364C1 /* BlueIntentScopeFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B849CFC267F015E00E364C1 /* BlueIntentScopeFunctions.swift */; };
+		5B849CFF267F016800E364C1 /* BlueIntentCompatible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B849CFE267F016800E364C1 /* BlueIntentCompatible.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
@@ -28,10 +31,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3A876AAE2AB552B76E3050F3 /* BlueIntentCore.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = BlueIntentCore.podspec; path = ../BlueIntentCore.podspec; sourceTree = "<group>"; };
+		3A876AAE2AB552B76E3050F3 /* BlueIntentCore.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = BlueIntentCore.podspec; path = ../BlueIntentCore.podspec; sourceTree = "<group>"; };
 		499A07FD89E3EC451084ADBC /* Pods-BlueIntentCore_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlueIntentCore_Tests.debug.xcconfig"; path = "Target Support Files/Pods-BlueIntentCore_Tests/Pods-BlueIntentCore_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		49F4ED7A6BA9221A31115629 /* Pods-BlueIntentCore_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlueIntentCore_Example.debug.xcconfig"; path = "Target Support Files/Pods-BlueIntentCore_Example/Pods-BlueIntentCore_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		5D3D57E86BDE98A36842AE15 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		5B849CF8267F014600E364C1 /* BlueIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BlueIntent.swift; path = ../BlueIntentCore/Classes/BlueIntent.swift; sourceTree = "<group>"; };
+		5B849CFC267F015E00E364C1 /* BlueIntentScopeFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BlueIntentScopeFunctions.swift; path = ../BlueIntentCore/Classes/BlueIntentScopeFunctions.swift; sourceTree = "<group>"; };
+		5B849CFE267F016800E364C1 /* BlueIntentCompatible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BlueIntentCompatible.swift; path = ../BlueIntentCore/Classes/BlueIntentCompatible.swift; sourceTree = "<group>"; };
+		5D3D57E86BDE98A36842AE15 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* BlueIntentCore_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlueIntentCore_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -42,7 +48,7 @@
 		607FACE51AFB9204008FA782 /* BlueIntentCore_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlueIntentCore_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		80B3230B56194E2F6422717C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		80B3230B56194E2F6422717C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		82D059F37630F81C68B0A25D /* Pods_BlueIntentCore_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BlueIntentCore_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A058D5148EBF8EA3A35FE9A7 /* Pods-BlueIntentCore_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlueIntentCore_Tests.release.xcconfig"; path = "Target Support Files/Pods-BlueIntentCore_Tests/Pods-BlueIntentCore_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		B3B730456FDB39C17EC23A99 /* Pods-BlueIntentCore_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlueIntentCore_Example.release.xcconfig"; path = "Target Support Files/Pods-BlueIntentCore_Example/Pods-BlueIntentCore_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -135,6 +141,9 @@
 				3A876AAE2AB552B76E3050F3 /* BlueIntentCore.podspec */,
 				80B3230B56194E2F6422717C /* README.md */,
 				5D3D57E86BDE98A36842AE15 /* LICENSE */,
+				5B849CF8267F014600E364C1 /* BlueIntent.swift */,
+				5B849CFE267F016800E364C1 /* BlueIntentCompatible.swift */,
+				5B849CFC267F015E00E364C1 /* BlueIntentScopeFunctions.swift */,
 			);
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
@@ -156,7 +165,6 @@
 				499A07FD89E3EC451084ADBC /* Pods-BlueIntentCore_Tests.debug.xcconfig */,
 				A058D5148EBF8EA3A35FE9A7 /* Pods-BlueIntentCore_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -172,6 +180,7 @@
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
 				9DF2D8DE844D5B02A6F34D40 /* [CP] Embed Pods Frameworks */,
+				5B849D00267F08A800E364C1 /* Swiftlint */,
 			);
 			buildRules = (
 			);
@@ -227,6 +236,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -262,6 +272,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		5B849D00267F08A800E364C1 /* Swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Swiftlint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n   swiftlint --path ../BlueIntentCore --config ../.swiftlint.yml\nelse\n   echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
 		9DF2D8DE844D5B02A6F34D40 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -332,6 +360,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				5B849CFD267F015E00E364C1 /* BlueIntentScopeFunctions.swift in Sources */,
+				5B849CF9267F014600E364C1 /* BlueIntent.swift in Sources */,
+				5B849CFF267F016800E364C1 /* BlueIntentCompatible.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

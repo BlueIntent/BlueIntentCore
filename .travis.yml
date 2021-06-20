@@ -2,13 +2,25 @@
 # * https://www.objc.io/issues/6-build-tools/travis-ci/
 # * https://github.com/supermarin/xcpretty#usage
 
-osx_image: xcode7.3
-language: objective-c
-# cache: cocoapods
+language: swift # or objective-c
+
+matrix:
+  include:
+    - stage: Static Library & Tests
+      xcode_scheme: "BlueIntentCore-Example"
+      osx_image: xcode11.2
+      env:
+        - XCODE_WORKSPACE=Example/BlueIntentCore.xcworkspace
+          XCODE_SCHEME=BlueIntentCore-Example
+          XCODE_DESTINATION="platform=iOS Simulator,name=iPhone 8,OS=13.2.2"
+      script:
+        - set -o pipefail
+        - xcodebuild -workspace $XCODE_WORKSPACE -scheme $XCODE_SCHEME -destination "$XCODE_DESTINATION" build test | xcpretty
+        - pod lib lint
+
+cache:
+  - cocoapods
 # podfile: Example/Podfile
-# before_install:
-# - gem install cocoapods # Since Travis is not always on latest version
-# - pod install --project-directory=Example
-script:
-- set -o pipefail && xcodebuild test -enableCodeCoverage YES -workspace Example/BlueIntentCore.xcworkspace -scheme BlueIntentCore-Example -sdk iphonesimulator9.3 ONLY_ACTIVE_ARCH=NO | xcpretty
-- pod lib lint
+before_install:
+  - gem install cocoapods # Since Travis is not always on latest version
+  - pod install --project-directory=Example

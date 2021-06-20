@@ -1,0 +1,16 @@
+PODS:
+  - BlueIntentCore (0.1.0)
+
+DEPENDENCIES:
+  - BlueIntentCore (from `../`)
+
+EXTERNAL SOURCES:
+  BlueIntentCore:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  BlueIntentCore: fda2d4296790f88bfcb14b77bbe6aa5a16930f73
+
+PODFILE CHECKSUM: 48c5e57174a07000fbd5b3e9867c65729f6b34dc
+
+COCOAPODS: 1.10.1
