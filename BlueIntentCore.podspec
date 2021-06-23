@@ -22,11 +22,11 @@ Pod::Spec.new do |s|
   - Use `BlueIntentExtension` proxy as customization point for constrained protocol extensions.
                        DESC
 
-  s.homepage         = 'https://github.com/qiuzhifei/BlueIntentCore'
+  s.homepage         = 'https://github.com/BlueIntent/BlueIntentCore'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'qiuzhifei' => 'qiuzhifei521@gmail.com' }
-  s.source           = { :git => 'https://github.com/qiuzhifei/BlueIntentCore.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/BlueIntent/BlueIntentCore.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '9.0'

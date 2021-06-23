@@ -1,9 +1,12 @@
 # BlueIntentCore
 
-[![CI Status](https://travis-ci.com/QiuZhiFei/BlueIntentCore.svg?branch=master)](https://travis-ci.com/qiuzhifei/BlueIntentCore)
+[![CI Status](https://img.shields.io/github/workflow/status/BlueIntent/BlueIntentCore/iOS%20testing)](https://github.com/BlueIntent/BlueIntentCore/actions)
 [![Version](https://img.shields.io/cocoapods/v/BlueIntentCore.svg?style=flat)](https://cocoapods.org/pods/BlueIntentCore)
-[![License](https://img.shields.io/cocoapods/l/BlueIntentCore)](https://github.com/qiuzhifei/BlueIntentCore/blob/master/LICENSE)
+[![License](https://img.shields.io/cocoapods/l/BlueIntentCore)](https://github.com/BlueIntent/BlueIntentCore/blob/master/LICENSE)
 [![Platform](https://img.shields.io/cocoapods/p/BlueIntentCore.svg?style=flat)](https://cocoapods.org/pods/BlueIntentCore)
+
+- Short way to unwrap optional value for Swift.
+- Use `BlueIntentExtension` proxy as customization point for constrained protocol extensions.
 
 ## Example
 
@@ -76,8 +79,9 @@ make
 qiuzhifei, qiuzhifei521@gmail.com
 
 ## References
-- https://github.com/ReactiveX/RxSwift/blob/main/RxSwift/Reactive.swift
+- https://kotlinlang.org/docs/scope-functions.html#return-value
 - https://developer.apple.com/documentation/swift/optional
+- https://github.com/ReactiveX/RxSwift/blob/main/RxSwift/Reactive.swift
 
 ## License
 

@@ -1,23 +1,30 @@
-.PHONY: help
+SHELL := /bin/bash
+.PHONY: help 
 
 ROOTPATH := $(shell pwd)
-SWIFTLINT := $(shell command -v swiftlint 2>/dev/null)
+XCHELPER := $(shell command -v xchelper 2>/dev/null)
 
-run:
-	cd Example && pod install --no-repo-update --verbose
-	open Example/*.xcworkspace/
+install_xchelper:
+	$(info install xchelper ...)
+ifeq ($(XCHELPER),)
+	$(eval TMP_DIR=$(shell mktemp -d -t xchelper))
+	curl -fsSL 'https://raw.githubusercontent.com/BlueIntent/xchelper/main/scripts/install.sh' > "$(TMP_DIR)/install.sh"
+	sh "$(TMP_DIR)/install.sh"
+	rm -rf $(TMP_DIR)
+else
+	$(info xchelper, skipping.)
+endif
 
-test:
-	SCHEMES=( $(xcodebuild -workspace */*.xcworkspace -list 2>/dev/null | sed '1,/Schemes:/d' | grep -v CordovaLib | sed -e 's/^[ \t]*//') )
-	echo $SCHEMES
+run: \
+	install_xchelper
+	xchelper run
+
+test: \
+	install_xchelper
+	xchelper test
 
 swift_lint:
-	$(info swift lint ...)
-ifeq ($(SWIFTLINT),)
-	$(warning warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint.)
-else
-	$(SWIFTLINT) --path */Classes --config $(ROOTPATH)/.swiftlint.yml
-endif
+	swiftlint --path */Classes --config $(ROOTPATH)/.swiftlint.yml
 
 pod_lint:
 	pod lib lint --allow-warnings --verbose
@@ -26,5 +33,6 @@ pod_deploy:
 	pod trunk push *.podspec --allow-warnings --verbose
 
 help: 
-	@echo targes:  run, swift_lint, pod_lint, pod_deploy
+	@echo targes: run, test, swift_lint, pod_lint, pod_deploy
 
+.DEFAULT_GOAL := run
