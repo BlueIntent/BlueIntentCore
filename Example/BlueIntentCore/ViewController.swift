@@ -7,9 +7,6 @@
 //
 
 import UIKit
-import BlueIntentCore
-
-extension String: BlueIntentCompatible { }
 
 class ViewController: UIViewController {
   

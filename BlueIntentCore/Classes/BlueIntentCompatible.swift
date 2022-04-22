@@ -37,6 +37,13 @@ public class BlueIntentExtension<Base> {
 /// Extend NSObject with `bi` proxy.
 extension NSObject: BlueIntentCompatible { }
 
+/// Extend String with `bi` proxy.
+extension String: BlueIntentCompatible { }
+
+/// Extend CGRect with `bi` proxy.
+import CoreGraphics
+extension CGRect: BlueIntentCompatible { }
+
 /// Extend Optional with `bi` proxy.
 public extension Optional {
   var bi: BlueIntentExtension<Self> {

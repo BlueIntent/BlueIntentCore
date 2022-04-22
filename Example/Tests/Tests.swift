@@ -1,8 +1,6 @@
 import XCTest
 import BlueIntentCore
 
-extension String: BlueIntentCompatible { }
-
 extension BlueIntentExtension where Base == String {
   public var length: Int {
     return base.count

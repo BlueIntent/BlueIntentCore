@@ -43,7 +43,7 @@ extension BlueIntentExtension {
   }
   
   @discardableResult
-  public func `var`<T>(_ block: ((_ it: Base?) -> T?)) -> T? {
+  public func `var`<T>(_ block: ((_ it: Base) -> T)) -> T {
     return block(base)
   }
 }
