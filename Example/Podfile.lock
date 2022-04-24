@@ -1,5 +1,5 @@
 PODS:
-  - BlueIntentCore (0.1.0)
+  - BlueIntentCore (0.2.0)
 
 DEPENDENCIES:
   - BlueIntentCore (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  BlueIntentCore: e774d95170ad952497df3d94cc7f38fb2554cb1b
+  BlueIntentCore: d52f356271d89115ab78a1c9cf4077ae7de81014
 
 PODFILE CHECKSUM: 48c5e57174a07000fbd5b3e9867c65729f6b34dc
 
