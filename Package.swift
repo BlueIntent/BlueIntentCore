@@ -5,6 +5,13 @@ import PackageDescription
 
 let package = Package(
   name: "BlueIntentCore",
+  defaultLocalization: "en",
+  platforms: [
+    .iOS(.v11),
+    .macOS(.v10_13),
+    .tvOS(.v11),
+    .watchOS(.v4)
+  ],
   products: [
     // Products define the executables and libraries a package produces, making them visible to other packages.
     .library(
@@ -16,6 +23,13 @@ let package = Package(
     // Targets can depend on other targets in this package and products from dependencies.
     .target(
       name: "BlueIntentCore",
-      path: "BlueIntentCore")
-  ]
+      path: "BlueIntentCore"),
+//    .executableTarget(name: "BlueIntentCore_Example",
+//                      dependencies: ["BlueIntentCore"],
+//                      path: "Example/BlueIntentCore"),
+    .testTarget(name: "BlueIntentCoreTests",
+                dependencies: ["BlueIntentCore"],
+                path: "Example/Tests")
+  ],
+  swiftLanguageVersions: [.v5]
 )
