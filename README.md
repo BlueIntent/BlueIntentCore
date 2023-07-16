@@ -1,6 +1,7 @@
 # BlueIntentCore
 
-[![CI Status](https://img.shields.io/github/workflow/status/BlueIntent/BlueIntentCore/iOS%20testing)](https://github.com/BlueIntent/BlueIntentCore/actions)
+[![CI Status](https://img.shields.io/github/actions/workflow/status/BlueIntent/BlueIntentCore/iOS-test.yml?branch=master)](https://github.com/BlueIntent/BlueIntentCore/actions)
+[![Swift Package Manager](https://img.shields.io/badge/Swift_Package_Manager-compatible-orange?style=flat-square)](https://img.shields.io/badge/Swift_Package_Manager-compatible-orange?style=flat-square)
 [![Version](https://img.shields.io/cocoapods/v/BlueIntentCore.svg?style=flat)](https://cocoapods.org/pods/BlueIntentCore)
 [![License](https://img.shields.io/cocoapods/l/BlueIntentCore)](https://github.com/BlueIntent/BlueIntentCore/blob/master/LICENSE)
 [![Platform](https://img.shields.io/cocoapods/p/BlueIntentCore.svg?style=flat)](https://cocoapods.org/pods/BlueIntentCore)
