@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'BlueIntentCore'
-  s.version          = '0.2.0'
+  s.version          = '0.3.0'
   s.summary          = 'BlueIntentCore is a short way to unwrap optional value for Swift.'
 
 # This description is used to generate tags and improve search results.
